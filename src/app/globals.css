@@ -830,3 +830,135 @@ html {
 .faq-link:hover::after {
   transform: scaleX(1);
 }
+
+
+
+/* ---------- Phones (<= 768px) ---------- */
+@media (max-width: 768px) {
+  /* General layout */
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* Navbar: show burger, hide menu until clicked */
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* Hero section */
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero-carousel {
+    flex-direction: column;
+  }
+
+  .carousel-container {
+    height: 260px;
+  }
+
+  .hero-content {
+    padding: 1.5rem 1rem 2rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  /* Features / Values grid */
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .feature-item {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* Menu grid */
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  /* About section */
+  .about-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about-text,
+  .about-image {
+    width: 100%;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Contact + booking */
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form {
+    margin-top: 1.5rem;
+  }
+
+  /* FAQ page */
+  .faq-page {
+    padding-top: 90px; /* below navbar */
+  }
+
+  .faq-container {
+    padding: 0 1rem 3rem;
+  }
+
+  .faq-item {
+    max-width: 600px;
+    margin: 0 auto 0.75rem;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+}
+
