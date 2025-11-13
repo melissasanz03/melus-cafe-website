@@ -1,7 +1,13 @@
 // src/components/Navbar.js
+"use client";
 import NavbarHideOnScroll from "./NavBarOnScroll";
-
+import { useState } from "react";
 export default function Navbar() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
     return (
       <> 
       <NavbarHideOnScroll/>
@@ -10,15 +16,27 @@ export default function Navbar() {
           <div className="nav-logo">
             <img src="/images/Melus_Cafe_Logo_Blue_3.png" alt="Melu's Cafe" className="logo-image" />
           </div>
-          <div className="nav-menu" id="nav-menu">
-            <a href="/" className="nav-link">Home</a>
-            <a href="/#about" className="nav-link">About</a>
-            <a href="/#book" className="nav-link">Book</a>
-            <a href="/faq" className="nav-link">FAQ</a>
+          <div className={`nav-menu ${menuOpen ? "active" : ""}`} id="nav-menu">
+            <a href="/" className="nav-link" onClick={closeMenu}>Home</a>
+            <a href="/#about" className="nav-link" onClick={closeMenu}>About</a>
+            <a href="/#book" className="nav-link" onClick={closeMenu}>Book</a>
+            <a href="/faq" className="nav-link" onClick={closeMenu}>FAQ</a>
           </div>
-          <div className="nav-toggle" id="nav-toggle">
-            <span className="bar"></span><span className="bar"></span><span className="bar"></span>
-          </div>
+
+          {/* Burger Button */}
+          <button
+          className={`nav-toggle ${menuOpen ? "active" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu">
+
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+
+        </button>
+          
+            
+          
         </div>
       </nav>
       </> 
