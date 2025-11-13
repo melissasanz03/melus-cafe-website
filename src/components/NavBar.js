@@ -1,17 +1,33 @@
 // src/components/Navbar.js
 "use client";
 import NavbarHideOnScroll from "./NavBarOnScroll";
-import { useState } from "react";
+import { useState, useRef, useEffect }from "react";
 export default function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const navRef = useRef(null);
+
+    // Close menu when clicking outside navbar (mobile and ipads)
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (navRef.current && !navRef.current.contains(event.target)) {
+          setMenuOpen(false);
+        }
+      }
+  
+      document.addEventListener("mousedown", handleClickOutside);
+  
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, []);
 
   const closeMenu = () => setMenuOpen(false);
 
     return (
       <> 
       <NavbarHideOnScroll/>
-      <nav className="navbar" id="navbar">
+      <nav className="navbar" id="navbar" ref={navRef}>
         <div className="nav-container">
           <div className="nav-logo">
             <img src="/images/Melus_Cafe_Logo_Blue_3.png" alt="Melu's Cafe" className="logo-image" />

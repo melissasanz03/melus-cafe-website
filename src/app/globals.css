@@ -197,6 +197,7 @@ img {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  
 }
 
 .bar {
@@ -572,6 +573,8 @@ img {
   border-radius: 8px;
   font-family: inherit;
   transition: var(--transition);
+  font-family: 'Work Sans', sans-serif ;
+  
 }
 
 .contact-form input:focus,
@@ -825,6 +828,13 @@ img {
 
 /* Optional: larger tap targets on mobile */
 @media (max-width: 720px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+  
+
   .faq-question { font-size: 16px; }
   .faq-icon { width: 20px; height: 20px; }
 }
@@ -862,14 +872,14 @@ img {
   transform: scaleX(1);
 }
 
-
+/* phones */
 @media (max-width: 768px) {
 
   body {
     font-size: 15px;
  
   }
-
+ 
   .container {
     padding: 0 14px;
   }
@@ -909,6 +919,7 @@ img {
 
   .nav-toggle {
     display: flex;
+    background-color: transparent;
   }
 
   /* Scroll offset for anchor links on mobile (match navbar height) */
@@ -1021,7 +1032,9 @@ img {
     width: 100%;
     padding: 2rem 1.5rem;
     height: auto;
+    
   }
+
   .contact-info  .social-links {
     margin-left: 60px; 
   }
@@ -1073,7 +1086,7 @@ img {
   }
 }
 
-
+/* ipads */
 @media (min-width: 600px) and (max-width: 1024px) {
 
   /* Move contact-info slightly right */
