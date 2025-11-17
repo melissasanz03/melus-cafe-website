@@ -335,7 +335,7 @@ img {
   width: var(--circle);
   height: var(--circle);
   border-radius: 50%;
-  background: #f7f8f8;     
+  background: #f5ede4;     
   display: grid;
   place-items: center;
   margin-bottom: 30px;

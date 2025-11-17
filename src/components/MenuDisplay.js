@@ -1,4 +1,5 @@
 
+import images from "@/metadata/menu.json"
 export default function MenuDisplay(){
     return(
 
@@ -8,12 +9,24 @@ export default function MenuDisplay(){
             
             <div className="menu-grid">
 
-                <div className="menu-item">
+              {images.map((item, i) => (
+
+                  <div className="menu-item" key={i}>
+                  <div className="menu-thumb">
+                    <img src={item.src} alt={item.alt} className="menu-image"/>
+                  </div>
+                  <p className="menu-label">{item.label}</p>
+                </div>
+
+              ))}
+
+                {/*<div className="menu-item">
                     <div className="menu-thumb">
                       <img src="images/pastry-1.jpg" alt="Matcha latte" className="menu-image"/>
                     </div>
                     <p className="menu-label">Matcha latte</p>
                   </div>
+
                   <div className="menu-item">
                     <div className="menu-thumb">
                       <img src="images/pastry-1.jpg" alt="Matcha latte" className="menu-image"/>
@@ -31,7 +44,7 @@ export default function MenuDisplay(){
                       <img src="images/pastry-1.jpg" alt="Matcha latte" className="menu-image"/>
                     </div>
                     <p className="menu-label">Matcha latte</p>
-                  </div>
+                  </div> */}
             </div>
 
             <div className="menu-cta">

@@ -2,6 +2,7 @@
 import BackToTop from "@/components/BackToTop";
 import MenuDisplay from "@/components/MenuDisplay";
 import Hero from "@/components/Hero";
+import ValueFeatures from "@/components/ValueFeatures";
 import Contact from "@/components/Contact";
 import About from "@/components/About";
 import Navbar from "@/components/NavBar";
@@ -15,7 +16,7 @@ export default function HomePage() {
     
      <Hero/>
 
-    {/* values */}
+    {/* values 
     <section className="features-grid-images">
        
             <div className="features-grid">
@@ -47,7 +48,8 @@ export default function HomePage() {
 
             </div>
        
-    </section>
+    </section>*/}
+    <ValueFeatures/>
     
 
     <MenuDisplay/>

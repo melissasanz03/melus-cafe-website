@@ -12,7 +12,7 @@ export default function ValueFeatures() {
 
             <div className="feature-item" key={i}>
             <div className="feature-image-wrapper">
-                <img src={item.img} alt="Artisan Coffee" className="feature-image"/>
+                <img src={item.src} alt={item.alt} className="feature-image"/>
             </div>
                 <h3 className="feature-title">{item.value}</h3>
             </div>

@@ -1,0 +1,22 @@
+[
+    {
+        "label" : "Matcha Latte",
+        "src": "images/matcha-latte.jpg",
+        "alt": "Matcha Latte"
+    },
+    {
+        "label" : "Biscoff Latte",
+        "src": "images/bisscoff-latte.jpg",
+        "alt": "Biscoff Latte"
+    },
+    {
+        "label" : "Caramel Latte",
+        "src": "images/caramel-latte.jpg",
+        "alt": "Caramel Latte"
+    },
+    {
+        "label" : "Strawberry Latte",
+        "src": "images/strawberry-latte.jpg",
+        "alt": "Strawberry Latte"
+    }
+]

@@ -7,12 +7,13 @@ export default function About() {
             <div className="about-content">
                 <div className="about-text">
                     <h2>Our Story</h2>
-                    <p>Melu's Cafe began with a simple dream: to create a warm, welcoming space where friends gather, ideas bloom, and community thrives. Named after our grandmother Melu, who believed that good food and great conversation could heal the world.</p>
-                    <p>Every cup we serve carries her spirit of hospitality, every pastry her love for bringing people together. We're not just serving coffee; we're brewing connections, one cup at a time.</p>
+                    <p>Melu’s Café was created from a love for Colombian specialty coffee and the belief that a beautiful cup can brighten any moment.</p>
+                    <p>As a Colombian-owned, we focus on intentional brewing, meticulous quality, and sustainable choices. Every drink is crafted with care, soft, simple, and elevated to give you a gentle pause in your day.</p>
+                    <p>Our flavors are inspired by home, our service is warm, and our mission is to share a premium coffee experience that feels comforting, curated, and uniquely us.</p>
                     
                 </div>
                 <div className="about-image">
-                    <img src="images/hero-1.jpeg" alt="Cafe Interior"/>
+                    <img src="images/coffee-bar.jpeg" alt="Cafe Interior"/>
                 </div>
             </div>
         </div>
