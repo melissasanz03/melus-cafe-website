@@ -1,10 +1,10 @@
 [
     {
-        "src": "images/Coffee-bar.jpeg",
+        "src": "images/hero-2.jpeg",
         "alt": "Artisan Coffee at Melu's Cafe"
     },
     {
-        "src": "images/hero-2.jpeg",
+        "src": "images/Coffee-bar.jpeg",
         "alt": "Artisan Coffee at Melu's Cafe"
     },
     {
@@ -12,7 +12,9 @@
         "alt": "Artisan Coffee at Melu's Cafe"
     },
     {
-        "src": "images/Coffee-bar.jpeg",
+        "src": "images/hero-4.jpeg",
         "alt": "Artisan Coffee at Melu's Cafe"
     }
+
+
 ]

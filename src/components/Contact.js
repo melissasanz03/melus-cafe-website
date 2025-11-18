@@ -1,5 +1,5 @@
 
-import InquiryForm from "./InquiryForm";
+import ContactForm from "./ContactForm";
 
 export default function Contact() {
     return(
@@ -44,7 +44,7 @@ export default function Contact() {
                
                 <div className="contact-form">
                     <h3 className="form-title">Submit an Inquiry</h3>
-                    <InquiryForm/>
+                    <ContactForm/>
     
                 </div>
           </div>

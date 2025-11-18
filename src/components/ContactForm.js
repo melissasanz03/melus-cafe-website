@@ -11,9 +11,8 @@ export default function ContactForm() {
       name: form.name.value,
       email: form.email.value,
       message: form.message.value,
-      
+      source: "Melu's Cafe Website",
     };
-
     setStatus("Sending...");
 
     try {
@@ -22,7 +21,6 @@ export default function ContactForm() {
         body: JSON.stringify(data),
         headers: { "Content-Type": "application/json" },
       });
-
       if (res.ok) {
         setStatus("Thanks for your message! ☕ We'll reply soon.");
         form.reset();
