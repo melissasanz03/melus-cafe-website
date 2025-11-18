@@ -1,4 +1,5 @@
 // src/components/Footer.js
+import SocialMedia from "./SocialMedia";
 export default function Footer() {
     return (
       <footer className="footer">
@@ -7,11 +8,7 @@ export default function Footer() {
             <div className="footer-section">
               <h3>MELU'S CAFE</h3>
               <p>Your neighborhood coffee haven, where every visit feels like coming home.</p>
-              <div className="social-links">
-                <a href="#"><i className="fab fa-facebook"></i></a>
-                <a href="#"><i className="fab fa-instagram"></i></a>
-                <a href="#"><i className="fab fa-twitter"></i></a>
-              </div>
+              <SocialMedia/>
             </div>
             <div className="footer-section">
               <h3>Quick Links</h3>

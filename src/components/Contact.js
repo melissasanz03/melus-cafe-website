@@ -1,5 +1,6 @@
 
 import ContactForm from "./ContactForm";
+import SocialMedia from "./SocialMedia";
 
 export default function Contact() {
     return(
@@ -34,11 +35,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <hr className="contact-divider" />
-                    <div className="social-links">
-                        <a href="#"><i className="fab fa-facebook"></i></a>
-                        <a href="#"><i className="fab fa-instagram"></i></a>
-                        <a href="#"><i className="fab fa-twitter"></i></a>
-                    </div>
+                    <SocialMedia/>
                 </div>
 
                
