@@ -7,14 +7,16 @@ export default function Footer() {
           <div className="footer-content">
             <div className="footer-section">
               <h3>MELU'S CAFE</h3>
-              <p>Your neighborhood coffee haven, where every visit feels like coming home.</p>
+              <p>A premium coffee experience, made delicate, warm, and beautifully simple.</p>
               <SocialMedia/>
             </div>
             <div className="footer-section">
               <h3>Quick Links</h3>
               <ul>
                 <li><a href="/#about">About</a></li>
+                {/*<li><a href="/booking">Book</a></li>*/}
                 <li><a href="/#book">Contact</a></li>
+                <li><a href="/faq">FAQ</a></li>
               </ul>
             </div>
             <div className="footer-section">

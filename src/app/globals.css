@@ -527,6 +527,18 @@ img {
   color: var(--primary-color);
 
 }
+.contact-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: color 0.25s ease;
+
+
+
+}
+.contact-link:hover {
+  color: var(--primary-color);;
+}
 .info-label{
   margin: 0 0 .25rem;
   font-size: 1.2rem;
@@ -870,6 +882,22 @@ img {
 
 .faq-link:hover::after {
   transform: scaleX(1);
+}
+
+/* Menu page */
+
+.menu-page {
+  background: var(--forth-color, #FCF8EF);
+  min-height: 110vh;
+  padding-top: 120px; /* pushes content below fixed/sticky navbar */
+}
+
+/* Booking page */
+
+.booking-page {
+  background: var(--forth-color, #FCF8EF);
+  min-height: 110vh;
+  padding-top: 120px; /* pushes content below fixed/sticky navbar */
 }
 
 /* phones */

@@ -3,8 +3,8 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Melu's Cafe | coffee cart catering",
-  description: "Melu’s Cafe offers artisan coffee cart catering for private events, weddings, and corporate gatherings in the NYC area.",
+  title: "Melu's Cafe | Coffee Cart catering",
+  description: "Melu’s Cafe offers specialty coffee cart catering for private events, weddings, and corporate gatherings in the NYC area.",
   icons: {
     icon: "/images/Melus_Cafe_Logo_Blue_3.png",
   }

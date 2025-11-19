@@ -4,7 +4,7 @@ import SocialMedia from "./SocialMedia";
 
 export default function Contact() {
     return(
-        <section id="book" className="contact">
+        <section id="contact" className="contact">
         <div className="container">
             <h2 className="section-title">CONTACT US</h2>
 
@@ -15,7 +15,7 @@ export default function Contact() {
                         <span className="icon-round"><i className="fas fa-map-marker-alt"></i></span>
                         <div>
                             <h4 className="info-label">Location</h4>
-                            <p>nyc Area</p>
+                            <p>nyc Area and surroundings</p>
                         </div>
                     </div>
     
@@ -34,6 +34,14 @@ export default function Contact() {
                             <p>Visit our {""} <a href="/faq" className="faq-link"> FAQ </a> {""} for quick asnwers to common quesitons.</p>
                         </div>
                     </div>
+                    {/*<div className="contact-item" >
+                        <span className="icon-round"><i className="fas fa-calendar-check"></i></span>
+                        <div>
+                            <h4 className="info-label"><a href="/bookings" className="contact-link">Book us</a></h4>
+                            <p>Have our Coffee bar at your next Corporate event & Private party.</p>
+                            
+                        </div>
+                     </div> */}
                     <hr className="contact-divider" />
                     <SocialMedia/>
                 </div>

@@ -35,7 +35,7 @@ export default function Navbar() {
           <div className={`nav-menu ${menuOpen ? "active" : ""}`} id="nav-menu">
             <a href="/" className="nav-link" onClick={closeMenu}>Home</a>
             <a href="/#about" className="nav-link" onClick={closeMenu}>About</a>
-            <a href="/#book" className="nav-link" onClick={closeMenu}>Book</a>
+            <a href="/#contact" className="nav-link" onClick={closeMenu}>Book</a>
             <a href="/faq" className="nav-link" onClick={closeMenu}>FAQ</a>
           </div>
 

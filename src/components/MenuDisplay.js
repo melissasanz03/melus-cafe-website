@@ -24,7 +24,7 @@ export default function MenuDisplay(){
             </div>
 
             <div className="menu-cta">
-                <a href="#" className="cta-button secondary">View Full Menu</a>
+                <a href="/#menu" className="cta-button secondary">View Full Menu</a>
             </div>
         </div>
     </section>
