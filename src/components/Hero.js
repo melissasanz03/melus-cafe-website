@@ -56,7 +56,7 @@ export default function Hero() {
             Coffee crafted with intention a gentle pause to sip, feel, and smile.
             </p>
           </div>
-          <a href="/#book" className="cta-button"> BOOK NOW</a>
+          <a href="/#contact" className="cta-button"> BOOK NOW</a>
         </div>
       </div>
     </section>
