@@ -13,7 +13,7 @@ export async function GET() {
         return json({ ok: false, error: "Missing fields: name, email, message" }, 400);
       }
   
-      const url = process.env.GAS_URL;
+      const url = process.env.CONTACT_GAS_URL;
       if (!url) {
         return json({ ok: false, error: "GAS_URL is not set (check .env.local and restart dev)" }, 500);
       }
